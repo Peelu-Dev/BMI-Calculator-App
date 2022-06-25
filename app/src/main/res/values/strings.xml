@@ -4,6 +4,10 @@
     <string name="_0">0</string>
     <string name="kg">Kg</string>
     <string name="height">Height</string>
-    <string name="inch">Inch</string>
+    <string name="inch">Cm</string>
     <string name="_1">1</string>
+    <string name="calculate">Calculate</string>
+    <string name="_24_35"></string>
+    <string name="you_are_healthy"></string>
+    <string name="normal_range_is_18_5_24_9"></string>
 </resources>

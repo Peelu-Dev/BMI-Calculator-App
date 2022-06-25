@@ -16,10 +16,10 @@
         app:cardElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" >
+        app:layout_constraintVertical_bias="0.112">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -27,8 +27,8 @@
 
             <TextView
                 android:id="@+id/tvWeight"
-                android:layout_width="86dp"
-                android:layout_height="43dp"
+                android:layout_width="124dp"
+                android:layout_height="44dp"
                 android:text="@string/weight"
                 android:textColor="#78909C"
                 android:textSize="28sp"
@@ -86,10 +86,10 @@
         app:cardMaxElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" >
+        app:layout_constraintVertical_bias="0.401">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -97,8 +97,8 @@
 
             <TextView
                 android:id="@+id/tvHeight"
-                android:layout_width="89dp"
-                android:layout_height="41dp"
+                android:layout_width="137dp"
+                android:layout_height="42dp"
                 android:text="@string/height"
                 android:textColor="#78909C"
                 android:textSize="28sp"
@@ -114,6 +114,7 @@
                 android:id="@+id/etHeight"
                 android:layout_width="175dp"
                 android:layout_height="54dp"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/_1"
                 android:inputType="number"
@@ -126,8 +127,7 @@
                 app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.648"
-                android:autofillHints="" />
+                app:layout_constraintVertical_bias="0.648" />
 
             <TextView
                 android:id="@+id/tvFeet"
@@ -144,6 +144,74 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.723" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="309dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/button_background"
+        android:elevation="15dp"
+        android:text="@string/calculate"
+        android:textColor="#616161"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResults"
+        android:layout_width="324dp"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_24_35"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_are_healthy"
+                android:textAlignment="center"
+                android:textColor="#26A69A"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tvRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_range_is_18_5_24_9"
+                android:textAlignment="center"
+                android:textColor="#78909C"
+                android:textSize="20sp" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
