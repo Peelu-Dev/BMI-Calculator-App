@@ -3,4 +3,7 @@
     <string name="weight">Weight</string>
     <string name="_0">0</string>
     <string name="kg">Kg</string>
+    <string name="height">Height</string>
+    <string name="inch">Inch</string>
+    <string name="_1">1</string>
 </resources>
